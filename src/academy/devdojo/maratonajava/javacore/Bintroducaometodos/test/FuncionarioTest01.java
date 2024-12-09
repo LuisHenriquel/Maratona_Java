@@ -8,12 +8,10 @@ public class FuncionarioTest01 {
 
         funcionario.setNome("Luis");
         funcionario.setIdade(17);
-        funcionario.setSalario(1.800);
-        funcionario.setSegundoSalario(2.500);
-        funcionario.setTerceiroSalario(3.150);
+        funcionario.setSalarios(new double[] { 1200, 987.32, 2000});
+        funcionario.imprime();
 
-        funcionario.imprimirDados();
-        funcionario.mediaSalarios();
+
 
     }
 }
