@@ -12,7 +12,7 @@ public class Anime {
     // 3- Bloco de inicialização é executado
     // 4-Construtor é executadp
    static {
-        System.out.println("Dentro do boloco de inicialização");
+        System.out.println("Dentro do boloco de inicialização static");
         episodios = new int[100];
         for(int i = 0; i < episodios.length; i++){
             episodios[i] = i+1;
@@ -32,13 +32,9 @@ public class Anime {
 
 
 
-    static {
-        System.out.println("Dentro do bloco de inicialização estático 2");
+    {
+        System.out.println("Dentro do bloco de inicialização nao estático ");
     }
-
-
-
-
 
     public Anime(String nome){
         this.nome = nome;
